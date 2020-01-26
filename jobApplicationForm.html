@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pacy's Job Application form </title>
+        <link rel="stylesheet" type="text/css" href="formStyle.css" />
+        <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="dropdown">
+        <h1>Pacy's Job Application form</h1>
+            <span id = 'instruction'>Mouse Over Me! I will have the instruction</span>
+            <div class="dropdown-content">
+              <p>Hello! Please fill in the blank</p>
+            </div>
+          </div>
+
+        <h2>New elements: </h2>
+        <ol>
+            <li>Add dropdown for instructions</li>
+            <li>Background Color</li>
+            <li>Title font and color (Google Font)</li>
+            <li>Italic title in each section</li>
+            <li>Using calender when the input is date</li>
+            <li>Float elements at different places</li>
+            <li>Modified short answer's box</li>
+            <li>Add a google map links</li>
+        </ol>
+
+        <form action="http://gclass.alexburner.com/formtest.php" method="post">
+            
+
+            <div>
+                <fieldset class = "personalInformation">
+                    <legend>Personal information</legend>
+                    Frist Name: <input type="text" name="firstname"><br> 
+                    Last name: <input type="text" name="lastname"><br>
+                    Date of Birth: <input type="date" name="Date of Birth" max="2020-2-1"><br>
+                    Email: <input type="email" name= 'Email'><br>
+                    Phone Number: <input type="number" name= 'Phone Number'><br>
+                    Home Address: <input type="text" name= 'Home Address'>
+                    <a href= "https://www.google.com/maps">Google Map </a>(If you need help)<br> 
+                    Education: <select name="education"> 
+                        <option value="-">-</option>
+                        <option value="High school">High School</option> 
+                        <option value="Bachelor">Bachelor</option> 
+                        <option value="Master">Master</option> 
+                        <option value="phd">PhD</option> </select><br>
+                    What year are you?<br> 
+                    <input type="radio" name="answer" value="freshman"> Freshman<br> 
+                    <input type="radio" name="answer" value="Sophomore"> Sophomore<br>
+                    <input type="radio" name="answer" value="Junior"> Junior<br>
+                    <input type="radio" name="answer" value="Senior"> Senior<br>
+                    <input type="radio" name="answer" value="Other"> Other
+                    <input type="text" name= 'Year of School'><br>
+                    Do you need visa/sponsorship after graduation? <br>
+                    <input type="radio" name="answer" value="yes"> Yes<br> 
+                    <input type="radio" name="answer" value="no"> No
+                </fieldset>
+            </div>
+            <div>
+                <fieldset class = "Account">
+                    <legend>Account</legend>
+                    User Name: <input type="text" name="User Name"><br> 
+                    Password: <input type="password" name="password"><br>
+                    Enter the Password again: <input type="password" name="Enter the Password again"><br>
+                </fieldset>
+            </div>
+            
+            <div>
+                <fieldset class = "Experience">
+                    <legend>Experiences</legend>
+                    Experience 1: <input type="text" name="Experience 1"><br> 
+                    Experience 2: <input type="text" name="Experience 2"><br>
+                    Experience 3: <input type="text" name="Experience 3"><br>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset class = "Essays">
+                    <legend>Essays</legend>
+                    Tell Me About Yourself <br>
+                    <textarea name="essay1"></textarea><br>
+                    Why do you want to work for our company?<br>
+                    <textarea name="essay2"></textarea>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset class = "AdditionalDocuments">
+                    <legend>Additional Documents</legend>
+                    Resume: <input type="text" name="Resume"><br> 
+                    Cover Letter: <input type="text" name="Cover Letter"><br>
+                </fieldset>
+            </div>
+            
+
+            <div>
+                <fieldset class = "Location">
+                    <legend>Locations</legend>
+                    <input type="checkbox" name="west" value="Seattle"> Seattle, WA<br> 
+                    <input type="checkbox" name="west" value="Bellevue"> Bellevue, WA<br>
+                    <input type="checkbox" name="west" value="San Diego"> San Diego, CA<br> 
+                    <input type="checkbox" name="west" value="LA"> Los Angelos, CA<br>
+                    <input type="checkbox" name="east" value="Boston"> Boston, MA<br> 
+                    <input type="checkbox" name="east" value="NY"> New York<br>
+                    <input type="checkbox" name="midWest" value="Chicago"> Chicago, IL<br> 
+                    <input type="checkbox" name="South" value="Austin"> Austin, TX<br>
+                    <input type="checkbox" name="others" value="Others"> Others <input type="text" name="Others"><br> 
+                </fieldset>
+            </div>
+
+            
+
+            <div>
+                <input type="submit" value="Submit form">
+            </div>
+            
+        
+        
+        </form>
+
+    </body>
+</html>
